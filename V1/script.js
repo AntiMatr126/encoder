@@ -7,7 +7,7 @@ let numArray = []
 let output = ''
 
 function LtrToNum() {
-    string = prompt("Insert Sentance Here:","Hello World")
+    string = prompt("Insert Sentence Here:","Hello World")
     letterArray = string.split('')
     
     for (let i = 0; letterArray.length > i; i++) {
@@ -17,11 +17,9 @@ function LtrToNum() {
     
     //alert(output)
     setTimeout(() => {
+        alert(output)
         copy(output)
         output = ''
-        setTimeout(() => {
-            alert('Cypher Copied')
-        },50);
     },50);
 
     letterArray = []
