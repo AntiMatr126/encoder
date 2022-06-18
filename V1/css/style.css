@@ -20,7 +20,6 @@
     width:30%;
     height:20%;
 
-    font-size: 1in;
 }
 
 #decode {
@@ -33,9 +32,15 @@
     width:30%;
     height:20%;
 
-    font-size: 1in;
 }
 
 .encoderButton {
     background-color: #aa8888;
+
+    cursor:pointer;
+
+}
+
+.encoderButton:hover {
+    background-color: #886666
 }
