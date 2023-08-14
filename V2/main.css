@@ -1,15 +1,22 @@
+:root {
+	--btnUp: #06a;
+	--btnDown: #048;
+}
+
 * {
 	margin:10px;
 }
+
 body {
 	background-color: #48c;
-	margin:0px;
+
+	text-align: center;
 }
 
 
-#other {
+div {
 	text-align: center;
-
+	margin: 0px;
 }
 
 input {
@@ -26,25 +33,21 @@ select {
 	cursor: pointer;
 }
 
+
 button {
 	font-size: 40px;
-	background-color: #048;
+	background-color: var(--btnUp);
 	border:black 1px solid;
 	border-radius: 3px;
 	cursor: pointer;
 }
 
 #out {
-	margin:0px;
 	max-width: 50%;
 	
 	font-size: 40px;
 	font-family: sans-serif;
 	word-wrap: break-word;
-
-	position: absolute;
-	left:50%;
-	transform: translate(-50%,0px);
 
 	width:fit-content;
 	height:fit-content;
@@ -55,6 +58,32 @@ button {
 
 	border-radius: 5px;
 
-	user-select: all;
+	user-select: none;
 	cursor:pointer;
+
+	display:inline-block;
+}
+
+#copied {
+	display: none;
+
+	width:min-content;
+
+	font-size: 30px;
+	background-color:antiquewhite;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+
+	animation: copied 1.5s normal;
+	animation-delay: 0.5s;
+}
+
+@keyframes copied {
+	0% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0%;
+	}
 }
